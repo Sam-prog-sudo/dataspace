@@ -6,6 +6,10 @@ settings.py
 .settings
 .vscode
 doctrees
+bin/
+etc/
+pyvenv.cfg
+share/
 
 __pycache__/
 *.py[cod]
