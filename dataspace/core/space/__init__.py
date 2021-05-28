@@ -309,6 +309,25 @@ class DataSpace:
         except Exception as e:
             raise Exception("Can not select unique data", e)
 
+    def wunique_(self, col) -> pd.DataFrame:
+        """
+        Weight unique values: returns a dataframe with a count
+        of unique values
+
+        :param col: the column to select from
+        :type col: ``str``
+        :return: a dataframe with a count of unique values in the column
+        :rtype: ``pd.DataFrame``
+
+        :example: `ds.unique_("col1")`
+        """
+        try:
+            s = pd.value_counts(self.df[col].values)
+            df = pd.DataFrame(s, columns=["Number"])
+            return df
+        except Exception as e:
+            raise Exception("Can not weight unique data", e)
+
     # **************************
     #        transform
     # **************************
@@ -346,6 +365,23 @@ class DataSpace:
             self.df = self.df.sort_values(col, **kwargs)
         except Exception as e:
             raise Exception("Can not sort the dataframe from column ", col, e)
+
+    def indexcol(self, col: str):
+        """
+        Add a column from the index
+
+        :param col: name of the new column
+        :type col: str
+
+        :example: ``ds.index_col("New col")``
+        """
+        try:
+            self.df[col] = self.df.index.values
+        except Exception as e:
+            self.err(e)
+            return
+        if is_notebook is True:
+            msg_ok("Column", col, "added from the index")
 
     # **************************
     #           charts
@@ -415,6 +451,22 @@ class DataSpace:
         :example: `ds.bar_()`
         """
         return self._chartEngine.chart(self.df, "bar", **kwargs)
+
+    def bar_num_(self, **kwargs):
+        """
+        Draw a bar chart with numbers. Only for Altair
+
+        :rtype: Altair chart
+
+        :example: `ds.bar_num_()`
+        """
+        if self._chartEngine.engine != "altair":
+            raise Exception(
+                """This chart is only available for the Altair engine
+            Please switch to Altair like this: ds.altair()
+            """
+            )
+        return self._chartEngine.chart(self.df, "bar_num", **kwargs)
 
     def area_(self, **kwargs):
         """

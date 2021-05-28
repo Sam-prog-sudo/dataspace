@@ -116,13 +116,12 @@ class AltairChart:
         df: pd.DataFrame,
         chart_type: str,
         opts,
-        style2,
+        style,
         encode,
     ) -> Chart:
         """
         Get a chart + text number chart
         """
-        style = {**style2}
         if chart_type == "line":
             c = (
                 Chart(df)
@@ -156,9 +155,9 @@ class AltairChart:
         if "size" in style:
             del style["size"]
         # style["color"] = text_color
-        df2 = df.replace({self.y.split(":")[0]: {0: np.nan}})
+        # df2 = df.replace({self.y.split(":")[0]: {0: np.nan}})
         num = (
-            Chart(df2)
+            Chart(df)
             .mark_text(**style)
             .encode(x=self.x, y=self.y, **encoder)
             .properties(**opts)
