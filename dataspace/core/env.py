@@ -1,3 +1,9 @@
+try:
+    from IPython import get_ipython
+except:
+    pass
+
+
 def _is_notebook():
     try:
         shell = get_ipython().__class__.__name__
