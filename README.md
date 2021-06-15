@@ -10,7 +10,7 @@ pip install -r requirements.txt
 
 ## Example notebooks
 
-Example notebooks are available: https://code.teals.fi/synw/dataspace_notebooks
+Example notebooks are available: https://git.emencia.net/greg/dataspace_notebooks
 
 ## Build the documentation
 
