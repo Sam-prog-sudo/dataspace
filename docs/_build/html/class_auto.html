@@ -160,6 +160,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="src/transform/values.html">Values</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="src/transform/values.html#sort">Sort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/transform/values.html#weight-unique">Weight unique</a></li>
 </ul>
 </li>
 </ul>
@@ -372,6 +373,20 @@
 <dt class="sig sig-object py" id="dataspace.core.space.DataSpace.df">
 <span class="sig-name descname"><span class="pre">df</span></span><em class="property"><span class="pre">:</span> <span class="pre">pandas.core.frame.DataFrame</span></em><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#dataspace.core.space.DataSpace.df" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.drop">
+<span class="sig-name descname"><span class="pre">drop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.drop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Drops columns from the main dataframe</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cols</strong> (<em>str</em>) – names of the columns</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">ds.drop(&quot;Col</span> <span class="pre">1&quot;,</span> <span class="pre">&quot;Col</span> <span class="pre">2&quot;)</span></code></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="dataspace.core.space.DataSpace.drop_nan">
@@ -768,9 +783,9 @@ main dataframe</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="dataspace.core.space.DataSpace.wunique_">
-<span class="sig-name descname"><span class="pre">wunique_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#dataspace.core.space.DataSpace.wunique_" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">wunique_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colname</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'Number'</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#dataspace.core.space.DataSpace.wunique_" title="Permalink to this definition">¶</a></dt>
 <dd><p>Weight unique values: returns a dataframe with a count
-of unique values</p>
+of unique values for a column</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>col</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – the column to select from</p>
@@ -782,7 +797,7 @@ of unique values</p>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">pd.DataFrame</span></code></p>
 </dd>
 <dt class="field-even">Example</dt>
-<dd class="field-even"><p><cite>ds.unique_(“col1”)</cite></p>
+<dd class="field-even"><p><cite>ds.wunique_(“col1”)</cite></p>
 </dd>
 </dl>
 </dd></dl>

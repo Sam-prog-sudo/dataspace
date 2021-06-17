@@ -22,6 +22,7 @@ from dataspace.clean import (
     _roundvals,
     _replace,
 )
+from dataspace.transform import _drop
 from dataspace.utils.messages import msg_ok
 
 from .view import _show
@@ -309,21 +310,21 @@ class DataSpace:
         except Exception as e:
             raise Exception("Can not select unique data", e)
 
-    def wunique_(self, col) -> pd.DataFrame:
+    def wunique_(self, col: str, colname: str = "Number") -> pd.DataFrame:
         """
         Weight unique values: returns a dataframe with a count
-        of unique values
+        of unique values for a column
 
         :param col: the column to select from
         :type col: ``str``
         :return: a dataframe with a count of unique values in the column
         :rtype: ``pd.DataFrame``
 
-        :example: `ds.unique_("col1")`
+        :example: `ds.wunique_("col1")`
         """
         try:
             s = pd.value_counts(self.df[col].values)
-            df = pd.DataFrame(s, columns=["Number"])
+            df = pd.DataFrame(s, columns=[colname])
             return df
         except Exception as e:
             raise Exception("Can not weight unique data", e)
@@ -382,6 +383,17 @@ class DataSpace:
             return
         if is_notebook is True:
             msg_ok("Column", col, "added from the index")
+
+    def drop(self, *cols) -> None:
+        """
+        Drops columns from the main dataframe
+
+        :param cols: names of the columns
+        :type cols: str
+
+        :example: ``ds.drop("Col 1", "Col 2")``
+        """
+        self.df = _drop(self.df, *cols)
 
     # **************************
     #           charts
