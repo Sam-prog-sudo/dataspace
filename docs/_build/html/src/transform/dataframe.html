@@ -160,10 +160,24 @@
 <li class="toctree-l2"><a class="reference internal" href="#split">Split</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#indexcol">Indexcol</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#drop">Drop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add">Add</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rename">Rename</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#keep">Keep</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#copycol">Copycol</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="values.html">Values</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="values.html#sort">Sort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="values.html#exclude">Exclude</a></li>
+<li class="toctree-l2"><a class="reference internal" href="values.html#dropr">Dropr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="values.html#append">Append</a></li>
+<li class="toctree-l2"><a class="reference internal" href="values.html#reverse">Reverse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="values.html#apply">Apply</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="resample.html">Resample timeseries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="resample.html#rsum">Rsum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resample.html#rmean">Rmean</a></li>
 </ul>
 </li>
 </ul>
@@ -311,6 +325,87 @@ return a dict of DataSpace instances</p>
 </dd>
 </dl>
 <img alt="../../_images/drop.png" src="../../_images/drop.png" />
+</dd></dl>
+
+</div>
+<div class="section" id="add">
+<h2>Add<a class="headerlink" href="#add" title="Permalink to this headline">¶</a></h2>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-prename descclassname"><span class="pre">DataSpace.</span></span><span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span></dt>
+<dd><p>Add a column with default values</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>col</strong> (<em>str</em>) – column name</p></li>
+<li><p><strong>value</strong> (<em>any</em>) – column value</p></li>
+</ul>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">ds.add(&quot;Col</span> <span class="pre">4&quot;,</span> <span class="pre">0)</span></code></p>
+</dd>
+</dl>
+<img alt="../../_images/add.png" src="../../_images/add.png" />
+</dd></dl>
+
+</div>
+<div class="section" id="rename">
+<h2>Rename<a class="headerlink" href="#rename" title="Permalink to this headline">¶</a></h2>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-prename descclassname"><span class="pre">DataSpace.</span></span><span class="sig-name descname"><span class="pre">rename</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dest_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span></dt>
+<dd><p>Renames a column in the main dataframe</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>source_col</strong> (<em>str</em>) – name of the column to rename</p></li>
+<li><p><strong>dest_col</strong> (<em>str</em>) – new name of the column</p></li>
+</ul>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">ds.rename(&quot;Col</span> <span class="pre">1&quot;,</span> <span class="pre">&quot;New</span> <span class="pre">col&quot;)</span></code></p>
+</dd>
+</dl>
+<img alt="../../_images/rename.png" src="../../_images/rename.png" />
+</dd></dl>
+
+</div>
+<div class="section" id="keep">
+<h2>Keep<a class="headerlink" href="#keep" title="Permalink to this headline">¶</a></h2>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-prename descclassname"><span class="pre">DataSpace.</span></span><span class="sig-name descname"><span class="pre">keep</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span></dt>
+<dd><p>Limit the dataframe to some columns</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cols</strong> (<em>str</em>) – names of the columns</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">ds.keep(&quot;Col</span> <span class="pre">1&quot;,</span> <span class="pre">&quot;Col</span> <span class="pre">2&quot;)</span></code></p>
+</dd>
+</dl>
+<img alt="../../_images/keep.png" src="../../_images/keep.png" />
+</dd></dl>
+
+</div>
+<div class="section" id="copycol">
+<h2>Copycol<a class="headerlink" href="#copycol" title="Permalink to this headline">¶</a></h2>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-prename descclassname"><span class="pre">DataSpace.</span></span><span class="sig-name descname"><span class="pre">copycol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">origin_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dest_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Copy a columns values in another column</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>origin_col</strong> (<em>str</em>) – name of the column to copy</p></li>
+<li><p><strong>dest_col</strong> (<em>str</em>) – name of the new column</p></li>
+</ul>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">ds.copy(&quot;col</span> <span class="pre">1&quot;,</span> <span class="pre">&quot;New</span> <span class="pre">col&quot;)</span></code></p>
+</dd>
+</dl>
+<img alt="../../_images/copycol.png" src="../../_images/copycol.png" />
 </dd></dl>
 
 </div>

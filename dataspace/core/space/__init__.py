@@ -22,7 +22,7 @@ from dataspace.clean import (
     _roundvals,
     _replace,
 )
-from dataspace.transform import _drop
+from dataspace.transform import _drop, _rename, _append, _apply, _rsum, _rmean
 from dataspace.utils.messages import msg_ok
 
 from .view import _show
@@ -350,7 +350,7 @@ class DataSpace:
                 df2 = DataSpace(self.df.loc[self.df[col] == key])
                 dss[key] = df2
         except Exception as e:
-            raise ("Can not split dataframe", e)
+            raise Exception("Can not split dataframe", e)
         return dss
 
     def sort(self, col: str, **kwargs):
@@ -394,6 +394,177 @@ class DataSpace:
         :example: ``ds.drop("Col 1", "Col 2")``
         """
         self.df = _drop(self.df, *cols)
+
+    def rename(self, source_col: str, dest_col: str) -> None:
+        """
+        Renames a column in the main dataframe
+
+        :param source_col: name of the column to rename
+        :type source_col: str
+        :param dest_col: new name of the column
+        :type dest_col: str
+
+        :example: ``ds.rename("Col 1", "New col")``
+        """
+        self.df = _rename(self.df, source_col, dest_col)
+
+    def add(self, col: str, value) -> None:
+        """
+        Add a column with default values
+
+        :param col: column name
+        :type col: str
+        :param value: column value
+        :type value: any
+
+        :example: ``ds.add("Col 4", 0)``
+        """
+        try:
+            self.df[col] = value
+        except Exception as e:
+            raise Exception("Can not add column", e)
+
+    def keep(self, *cols) -> None:
+        """
+        Limit the dataframe to some columns
+
+        :param cols: names of the columns
+        :type cols: str
+
+        :example: ``ds.keep("Col 1", "Col 2")``
+        """
+        try:
+            self.df = self.df[list(cols)]
+        except Exception as e:
+            raise Exception("Can not remove colums", e)
+        msg_ok("Setting dataframe to columns", " ".join(cols))
+
+    def exclude(self, col: str, val) -> None:
+        """
+        Delete rows based on value
+
+        :param col: column name
+        :type col: str
+        :param val: value to delete
+        :type val: any
+
+        :example: ``ds.exclude("Col 1", "value")``
+        """
+        try:
+            self.df = self.df[self.df[col] != val]
+        except Exception as e:
+            raise Exception("Can not exclude rows based on value " + str(val), e)
+
+    def copycol(self, origin_col: str, dest_col: str):
+        """
+        Copy a columns values in another column
+
+        :param origin_col: name of the column to copy
+        :type origin_col: str
+        :param dest_col: name of the new column
+        :type dest_col: str
+
+        :example: ``ds.copy("col 1", "New col")``
+        """
+        try:
+            self.df[dest_col] = self.df[[origin_col]]
+        except Exception as e:
+            raise Exception("Can not copy column", e)
+
+    def dropr(self, *rows):
+        """
+        Drops some rows from the main dataframe
+
+        :param rows: rows names
+        :type rows: list of ints
+
+        :example: ``ds.drop_rows([0, 2])``
+        """
+        try:
+            self.df = self.df.drop(*rows)
+        except Exception as e:
+            raise Exception("Can not drop rows", e)
+        msg_ok("Rows dropped")
+
+    def append(self, vals: list, index=None) -> None:
+        """
+        Append a row to the main dataframe
+
+        :param vals: list of the row values to add
+        :type vals: list
+        :param index: index key, defaults to None
+        :param index: any, optional
+
+        :example: ``ds.append([0, 2, 2, 3, 4])``
+        """
+        self.df = _append(self.df, vals, index)
+
+    def reverse(self) -> None:
+        """
+        Reverses the main dataframe order
+
+        :example: ``ds.reverse()``
+        """
+        try:
+            self.df = self.df.iloc[::-1]
+        except Exception as e:
+            raise Exception("Can not reverse the dataframe", e)
+
+    def apply(self, function, *cols: List[str], axis=1, **kwargs) -> None:
+        """
+        Apply a function on columns values
+
+        :param function: a function to apply to the columns
+        :type function: function
+        :param cols: columns names
+        :type cols: name of columns
+        :param axis: index (0) or column (1), default is 1
+        :param kwargs: arguments for ``df.apply``
+        :type kwargs: optional
+
+        :example:
+                        .. code-block:: python
+
+                                def f(row):
+                                        # add a new column with a value
+                                        row["newcol"] = row["col1"] + 1
+                                        return row
+
+                                ds.apply(f)
+
+        """
+        self.df = _apply(self.df, function, *cols, axis=axis, **kwargs)
+
+    def rsum(
+        self, time_period: str, num_col: str = "Number", dateindex: str = None
+    ) -> None:
+        """
+        Resample and add a sum the main dataframe to a time period
+
+        :param time_period: unit + period: periods are Y, M, D, H, Min, S
+        :param time_period: str
+        :param num_col: name of the new column, defaults to "Number"
+        :param num_col: str, optional
+        :param dateindex: column name to use as date index, defaults to None
+        :param dateindex: str, optional
+
+        :example: ``ds.rsum("1D")``
+        """
+        self.df = _rsum(self.df, time_period, num_col, dateindex)
+
+    def rmean(self, time_period: str, num_col: str = "Number", dateindex: str = None):
+        """
+        Resample and add a mean column the main dataframe to a time period
+
+        :param time_period: unit + period: periods are Y, M, D, H, Min, S
+        :param time_period: str
+        :param num_col: number of the new column, defaults to "Number"
+        :param num_col: str, optional
+        :param dateindex: column name to use as date index, defaults to None
+
+        :example: ``ds.rmean("1Min")``
+        """
+        self.df = _rmean(self.df, time_period, num_col, dateindex)
 
     # **************************
     #           charts
