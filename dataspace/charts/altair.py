@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from altair import Chart, X, Y, Scale, data_transformers
 
-from dataspace.transform.column import _drop
+from dataspace.transform import _drop
 from dataspace.core.env import is_notebook
 
 data_transformers.disable_max_rows()

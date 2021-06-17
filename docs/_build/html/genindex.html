@@ -158,10 +158,24 @@
 <li class="toctree-l2"><a class="reference internal" href="src/transform/dataframe.html#split">Split</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/transform/dataframe.html#indexcol">Indexcol</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/transform/dataframe.html#drop">Drop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/transform/dataframe.html#add">Add</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/transform/dataframe.html#rename">Rename</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/transform/dataframe.html#keep">Keep</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/transform/dataframe.html#copycol">Copycol</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="src/transform/values.html">Values</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="src/transform/values.html#sort">Sort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/transform/values.html#exclude">Exclude</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/transform/values.html#dropr">Dropr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/transform/values.html#append">Append</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/transform/values.html#reverse">Reverse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/transform/values.html#apply">Apply</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="src/transform/resample.html">Resample timeseries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="src/transform/resample.html#rsum">Rsum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/transform/resample.html#rmean">Rmean</a></li>
 </ul>
 </li>
 </ul>
@@ -262,6 +276,7 @@
  | <a href="#F"><strong>F</strong></a>
  | <a href="#H"><strong>H</strong></a>
  | <a href="#I"><strong>I</strong></a>
+ | <a href="#K"><strong>K</strong></a>
  | <a href="#L"><strong>L</strong></a>
  | <a href="#P"><strong>P</strong></a>
  | <a href="#R"><strong>R</strong></a>
@@ -274,10 +289,16 @@
 <h2 id="A">A</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="class_auto.html#dataspace.core.space.DataSpace.add">add() (dataspace.core.space.DataSpace method)</a>
+</li>
       <li><a href="class_auto.html#dataspace.core.space.DataSpace.altair">altair() (dataspace.core.space.DataSpace method)</a>
+</li>
+      <li><a href="class_auto.html#dataspace.core.space.DataSpace.append">append() (dataspace.core.space.DataSpace method)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="class_auto.html#dataspace.core.space.DataSpace.apply">apply() (dataspace.core.space.DataSpace method)</a>
+</li>
       <li><a href="class_auto.html#dataspace.core.space.DataSpace.area_">area_() (dataspace.core.space.DataSpace method)</a>
 </li>
       <li><a href="class_auto.html#dataspace.core.space.DataSpace.axis">axis() (dataspace.core.space.DataSpace method)</a>
@@ -305,6 +326,10 @@
       <li><a href="class_auto.html#dataspace.core.space.DataSpace.cols_">cols_() (dataspace.core.space.DataSpace method)</a>
 </li>
   </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="class_auto.html#dataspace.core.space.DataSpace.copycol">copycol() (dataspace.core.space.DataSpace method)</a>
+</li>
+  </ul></td>
 </tr></table>
 
 <h2 id="D">D</h2>
@@ -314,19 +339,25 @@
 </li>
       <li><a href="class_auto.html#dataspace.core.space.DataSpace.dateindex">dateindex() (dataspace.core.space.DataSpace method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="class_auto.html#dataspace.core.space.DataSpace.df">df (dataspace.core.space.DataSpace attribute)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="class_auto.html#dataspace.core.space.DataSpace.drop">drop() (dataspace.core.space.DataSpace method)</a>
 </li>
       <li><a href="class_auto.html#dataspace.core.space.DataSpace.drop_nan">drop_nan() (dataspace.core.space.DataSpace method)</a>
+</li>
+      <li><a href="class_auto.html#dataspace.core.space.DataSpace.dropr">dropr() (dataspace.core.space.DataSpace method)</a>
 </li>
   </ul></td>
 </tr></table>
 
 <h2 id="E">E</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="class_auto.html#dataspace.core.space.DataSpace.exclude">exclude() (dataspace.core.space.DataSpace method)</a>
+</li>
+  </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="class_auto.html#dataspace.core.space.DataSpace.export_csv">export_csv() (dataspace.core.space.DataSpace method)</a>
 </li>
@@ -373,6 +404,14 @@
   </ul></td>
 </tr></table>
 
+<h2 id="K">K</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="class_auto.html#dataspace.core.space.DataSpace.keep">keep() (dataspace.core.space.DataSpace method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
 <h2 id="L">L</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -396,11 +435,19 @@
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="class_auto.html#dataspace.core.space.DataSpace.rename">rename() (dataspace.core.space.DataSpace method)</a>
+</li>
       <li><a href="class_auto.html#dataspace.core.space.DataSpace.replace">replace() (dataspace.core.space.DataSpace method)</a>
+</li>
+      <li><a href="class_auto.html#dataspace.core.space.DataSpace.reverse">reverse() (dataspace.core.space.DataSpace method)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="class_auto.html#dataspace.core.space.DataSpace.rmean">rmean() (dataspace.core.space.DataSpace method)</a>
+</li>
       <li><a href="class_auto.html#dataspace.core.space.DataSpace.roundvals">roundvals() (dataspace.core.space.DataSpace method)</a>
+</li>
+      <li><a href="class_auto.html#dataspace.core.space.DataSpace.rsum">rsum() (dataspace.core.space.DataSpace method)</a>
 </li>
   </ul></td>
 </tr></table>

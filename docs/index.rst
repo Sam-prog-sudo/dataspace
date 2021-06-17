@@ -36,6 +36,7 @@ Dataspace
 
    src/transform/dataframe
    src/transform/values
+   src/transform/resample
 
 .. toctree::
    :maxdepth: 3
