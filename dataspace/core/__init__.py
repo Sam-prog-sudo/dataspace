@@ -1,4 +1,4 @@
-from typing import Dict, List
+from typing import Dict, Iterable, List
 
 from numpy import nan
 import pandas as pd
@@ -24,7 +24,7 @@ from dataspace.clean import (
 )
 from dataspace.transform import _drop, _rename, _append, _apply, _rsum, _rmean
 from dataspace.utils.messages import msg_ok
-
+from dataspace.calculations import _diffn, _diffp, _diffm, _diffs, _diffsp
 from dataspace.info.view import _show
 from dataspace.info import _cols
 
@@ -565,6 +565,148 @@ class DataSpace:
         :example: ``ds.rmean("1Min")``
         """
         self.df = _rmean(self.df, time_period, num_col, dateindex)
+
+    # **************************
+    #        calculations
+    # **************************
+
+    def diffn(self, diffcol: str, name: str = "Diff", doround=True) -> None:
+        """
+        Add a diff column to the main dataframe: calculate the diff
+        from the next value
+
+        :param diffcol: column to diff from
+        :type diffcol: str
+        :param name: diff column name, defaults to "Diff"
+        :type name: str, optional
+
+        :example: ``ds.diffn("Col 1", "New col")``
+        """
+        self.df = _diffn(
+            self.df, diffcol=diffcol, name=name, doround=doround, percent=False
+        )
+
+    def diffnp(self, diffcol: str, name: str = "Diff", doround=True) -> None:
+        """
+        Add a diff column to the main dataframe: calculate the diff
+        in percentage from the next value
+
+        :param diffcol: column to diff from
+        :type diffcol: str
+        :param name: diff column name, defaults to "Diff"
+        :type name: str, optional
+
+        :example: ``ds.diffnp("Col 1", "New col")``
+        """
+        self.df = _diffn(
+            self.df, diffcol=diffcol, name=name, doround=doround, percent=True
+        )
+
+    def diffp(self, diffcol: str, name: str = "Diff", doround=True) -> None:
+        """
+        Add a diff column to the main dataframe: calculate the diff
+        from the previous value
+
+        :param diffcol: column to diff from
+        :type diffcol: str
+        :param name: diff column name, defaults to "Diff"
+        :type name: str, optional
+
+        :example: ``ds.diffp("Col 1", "New col")``
+        """
+        self.df = _diffp(
+            self.df, diffcol=diffcol, name=name, doround=doround, percent=False
+        )
+
+    def diffpp(self, diffcol: str, name: str = "Diff", doround=True) -> None:
+        """
+        Add a diff column to the main dataframe: calculate the diff
+        in percentage from the previous value
+
+        :param diffcol: column to diff from
+        :type diffcol: str
+        :param name: diff column name, defaults to "Diff"
+        :type name: str, optional
+
+        :example: ``ds.diffpp("Col 1", "New col")``
+        """
+        self.df = _diffp(
+            self.df, diffcol=diffcol, name=name, doround=doround, percent=True
+        )
+
+    def diffm(
+        self, diffcol: str, name: str = "Diff", default=nan, doround=True
+    ) -> None:
+        """
+        Add a diff column to the main dataframe: calculate the
+        diff from the column mean
+
+        :param diffcol: column to diff from
+        :type diffcol: str
+        :param name: diff column name, defaults to "Diff"
+        :param name: str, optional
+        :param default: column default value, defaults to nan
+        :param default: optional
+
+        :example: ``ds.diffm("Col 1", "New col")``
+        """
+        self.df = _diffm(
+            self.df, diffcol, name=name, default=default, doround=doround, percent=False
+        )
+
+    def diffmp(
+        self, diffcol: str, name: str = "Diff", default=nan, doround=True
+    ) -> None:
+        """
+        Add a diff column to the main dataframe: calculate the
+        diff in percentage from the column mean
+
+        :param diffcol: column to diff from
+        :type diffcol: str
+        :param name: diff column name, defaults to "Diff"
+        :param name: str, optional
+        :param default: column default value, defaults to nan
+        :param default: optional
+
+        :example: ``ds.diffmp("Col 1", "New col")``
+        """
+        self.df = _diffm(
+            self.df, diffcol, name=name, default=default, doround=doround, percent=True
+        )
+
+    """
+    def diffs(self, col: str, serie: Iterable, name: str = "Diff") -> None:
+        ""
+        Add a diff column from a serie. The serie is an iterable
+        of the same length than the dataframe
+
+        :param col: column to diff
+        :type col: str
+        :param serie: serie to diff from
+        :type serie: iterable
+        :param name: name of the diff col, defaults to "Diff"
+        :param name: str, optional
+
+        :example: ``ds.diffs("Col 1", [1, 1, 4], "New col")``
+        ""
+        self.df = _diffs(self.df, col, serie, name)
+
+    def diffsp(self, col: str, serie: Iterable, name: str = "Diff") -> None:
+        ""
+        Add a diff column in percentage from a serie. The serie is
+        an iterable of the same length than the dataframe
+
+        :param col: column to diff
+        :type col: str
+        :param serie: serie to diff from
+        :type serie: iterable
+        :param name: name of the diff col, defaults to "Diff"
+        :param name: str, optional
+
+        :example: ``ds.diffp("Col 1", [1, 1, 4], "New col")``
+        ""
+        self.df = _diffsp(self.df, col, serie, name)
+    """
 
     # **************************
     #           charts

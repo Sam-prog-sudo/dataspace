@@ -1,1 +1,1 @@
-from .regression import _regression
+from .diff import _diffn, _diffp, _diffm, _diffs, _diffsp
