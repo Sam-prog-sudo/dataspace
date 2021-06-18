@@ -1,5 +1,5 @@
 import pandas as pd
-from ..utils.messages import msg_start, msg_end
+from dataspace.utils.messages import msg_start, msg_end
 
 
 def _export_csv(df: pd.DataFrame, filepath: str, **kwargs) -> None:

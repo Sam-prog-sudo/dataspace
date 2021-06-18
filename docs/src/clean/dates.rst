@@ -4,7 +4,7 @@ Dates
 To date
 -------
 
-.. automethod:: dataspace.core.space.DataSpace.to_date
+.. automethod:: dataspace.core.DataSpace.to_date
   :noindex: 
 
   .. image:: /img/clean/to_date.png
@@ -12,7 +12,7 @@ To date
 Format date
 -----------
 
-.. automethod:: dataspace.core.space.DataSpace.fdate
+.. automethod:: dataspace.core.DataSpace.fdate
   :noindex: 
 
   .. image:: /img/clean/fdate.png
@@ -20,7 +20,7 @@ Format date
 Timestamps
 ----------
 
-.. automethod:: dataspace.core.space.DataSpace.timestamps
+.. automethod:: dataspace.core.DataSpace.timestamps
   :noindex: 
 
   .. image:: /img/clean/timestamps.png

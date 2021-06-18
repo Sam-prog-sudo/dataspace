@@ -1,7 +1,7 @@
 DataSpace class
 ===============
 
-.. autoclass:: dataspace.core.space.DataSpace
+.. autoclass:: dataspace.core.DataSpace
     :members:
     :undoc-members:
     :inherited-members:

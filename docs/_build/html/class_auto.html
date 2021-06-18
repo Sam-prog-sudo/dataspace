@@ -270,12 +270,12 @@
   <div class="section" id="dataspace-class">
 <h1>DataSpace class<a class="headerlink" href="#dataspace-class" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">dataspace.core.space.</span></span><span class="sig-name descname"><span class="pre">DataSpace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">pandas.core.frame.DataFrame</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">dataspace.core.</span></span><span class="sig-name descname"><span class="pre">DataSpace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">pandas.core.frame.DataFrame</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.add">
-<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.add" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.add">
+<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.add" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add a column with default values</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -291,8 +291,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.altair">
-<span class="sig-name descname"><span class="pre">altair</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.altair" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.altair">
+<span class="sig-name descname"><span class="pre">altair</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.altair" title="Permalink to this definition">¶</a></dt>
 <dd><p>Use the Altair charts engine</p>
 <dl class="field-list simple">
 <dt class="field-odd">Example</dt>
@@ -302,8 +302,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.append">
-<span class="sig-name descname"><span class="pre">append</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vals</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.append" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.append">
+<span class="sig-name descname"><span class="pre">append</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vals</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.append" title="Permalink to this definition">¶</a></dt>
 <dd><p>Append a row to the main dataframe</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -320,8 +320,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.apply">
-<span class="sig-name descname"><span class="pre">apply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.apply" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.apply">
+<span class="sig-name descname"><span class="pre">apply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.apply" title="Permalink to this definition">¶</a></dt>
 <dd><p>Apply a function on columns values</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters</dt>
@@ -346,8 +346,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.area_">
-<span class="sig-name descname"><span class="pre">area_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.area_" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.area_">
+<span class="sig-name descname"><span class="pre">area_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.area_" title="Permalink to this definition">¶</a></dt>
 <dd><p>Draw an area chart</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -360,8 +360,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.axis">
-<span class="sig-name descname"><span class="pre">axis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_axis_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_axis_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.axis" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.axis">
+<span class="sig-name descname"><span class="pre">axis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_axis_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_axis_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.axis" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the columns to use for the chart x and y axis</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -377,8 +377,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.bar_">
-<span class="sig-name descname"><span class="pre">bar_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.bar_" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.bar_">
+<span class="sig-name descname"><span class="pre">bar_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.bar_" title="Permalink to this definition">¶</a></dt>
 <dd><p>Draw a bar chart</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -391,8 +391,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.bar_num_">
-<span class="sig-name descname"><span class="pre">bar_num_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.bar_num_" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.bar_num_">
+<span class="sig-name descname"><span class="pre">bar_num_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.bar_num_" title="Permalink to this definition">¶</a></dt>
 <dd><p>Draw a bar chart with numbers. Only for Altair</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -405,8 +405,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.bokeh">
-<span class="sig-name descname"><span class="pre">bokeh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.bokeh" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.bokeh">
+<span class="sig-name descname"><span class="pre">bokeh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.bokeh" title="Permalink to this definition">¶</a></dt>
 <dd><p>Use the Bokeh charts engine</p>
 <dl class="field-list simple">
 <dt class="field-odd">Example</dt>
@@ -416,8 +416,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.cols_">
-<span class="sig-name descname"><span class="pre">cols_</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#dataspace.core.space.DataSpace.cols_" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.cols_">
+<span class="sig-name descname"><span class="pre">cols_</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#dataspace.core.DataSpace.cols_" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a dataframe with columns info</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -433,8 +433,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.copycol">
-<span class="sig-name descname"><span class="pre">copycol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">origin_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dest_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.copycol" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.copycol">
+<span class="sig-name descname"><span class="pre">copycol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">origin_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dest_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.copycol" title="Permalink to this definition">¶</a></dt>
 <dd><p>Copy a columns values in another column</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -450,8 +450,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.dateindex">
-<span class="sig-name descname"><span class="pre">dateindex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#dataspace.core.space.DataSpace.dateindex" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.dateindex">
+<span class="sig-name descname"><span class="pre">dateindex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#dataspace.core.DataSpace.dateindex" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set a datetime index from a column</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -464,13 +464,13 @@
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.df">
-<span class="sig-name descname"><span class="pre">df</span></span><em class="property"><span class="pre">:</span> <span class="pre">pandas.core.frame.DataFrame</span></em><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#dataspace.core.space.DataSpace.df" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.df">
+<span class="sig-name descname"><span class="pre">df</span></span><em class="property"><span class="pre">:</span> <span class="pre">pandas.core.frame.DataFrame</span></em><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#dataspace.core.DataSpace.df" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.drop">
-<span class="sig-name descname"><span class="pre">drop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.drop" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.drop">
+<span class="sig-name descname"><span class="pre">drop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.drop" title="Permalink to this definition">¶</a></dt>
 <dd><p>Drops columns from the main dataframe</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -483,8 +483,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.drop_nan">
-<span class="sig-name descname"><span class="pre">drop_nan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.drop_nan" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.drop_nan">
+<span class="sig-name descname"><span class="pre">drop_nan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.drop_nan" title="Permalink to this definition">¶</a></dt>
 <dd><p>Drop rows with <code class="docutils literal notranslate"><span class="pre">NaN</span></code> values from the main dataframe</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -501,8 +501,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.dropr">
-<span class="sig-name descname"><span class="pre">dropr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">rows</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.dropr" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.dropr">
+<span class="sig-name descname"><span class="pre">dropr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">rows</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.dropr" title="Permalink to this definition">¶</a></dt>
 <dd><p>Drops some rows from the main dataframe</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -515,8 +515,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.exclude">
-<span class="sig-name descname"><span class="pre">exclude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.exclude" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.exclude">
+<span class="sig-name descname"><span class="pre">exclude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.exclude" title="Permalink to this definition">¶</a></dt>
 <dd><p>Delete rows based on value</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -532,8 +532,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.export_csv">
-<span class="sig-name descname"><span class="pre">export_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.export_csv" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.export_csv">
+<span class="sig-name descname"><span class="pre">export_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.export_csv" title="Permalink to this definition">¶</a></dt>
 <dd><p>Write the main dataframe to a csv file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -549,8 +549,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.fdate">
-<span class="sig-name descname"><span class="pre">fdate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'S'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.fdate" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.fdate">
+<span class="sig-name descname"><span class="pre">fdate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'S'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.fdate" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert column values to formated date string</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -567,8 +567,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.fill_nan">
-<span class="sig-name descname"><span class="pre">fill_nan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.fill_nan" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.fill_nan">
+<span class="sig-name descname"><span class="pre">fill_nan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.fill_nan" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fill NaN values with new values in the main dataframe</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -584,8 +584,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.fill_nulls">
-<span class="sig-name descname"><span class="pre">fill_nulls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">nan</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nulls</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[None,</span> <span class="pre">'']</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.fill_nulls" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.fill_nulls">
+<span class="sig-name descname"><span class="pre">fill_nulls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">nan</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nulls</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[None,</span> <span class="pre">'']</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.fill_nulls" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fill all null values with NaN values in a column.
 Null values are <code class="docutils literal notranslate"><span class="pre">None</span></code> or en empty string</p>
 <dl class="field-list simple">
@@ -599,8 +599,8 @@ Null values are <code class="docutils literal notranslate"><span class="pre">Non
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.hline_">
-<span class="sig-name descname"><span class="pre">hline_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.hline_" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.hline_">
+<span class="sig-name descname"><span class="pre">hline_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.hline_" title="Permalink to this definition">¶</a></dt>
 <dd><p>Draw an horizontal mean line for the y axis</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -613,8 +613,8 @@ Null values are <code class="docutils literal notranslate"><span class="pre">Non
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.index">
-<span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#dataspace.core.space.DataSpace.index" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.index">
+<span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#dataspace.core.DataSpace.index" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set an index to the main dataframe</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -627,8 +627,8 @@ Null values are <code class="docutils literal notranslate"><span class="pre">Non
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.indexcol">
-<span class="sig-name descname"><span class="pre">indexcol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.indexcol" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.indexcol">
+<span class="sig-name descname"><span class="pre">indexcol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.indexcol" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add a column from the index</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -641,8 +641,8 @@ Null values are <code class="docutils literal notranslate"><span class="pre">Non
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.keep">
-<span class="sig-name descname"><span class="pre">keep</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.keep" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.keep">
+<span class="sig-name descname"><span class="pre">keep</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.keep" title="Permalink to this definition">¶</a></dt>
 <dd><p>Limit the dataframe to some columns</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -655,8 +655,8 @@ Null values are <code class="docutils literal notranslate"><span class="pre">Non
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.limit">
-<span class="sig-name descname"><span class="pre">limit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.limit" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.limit">
+<span class="sig-name descname"><span class="pre">limit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.limit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Limit selection to a range in the main dataframe</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -669,8 +669,8 @@ Null values are <code class="docutils literal notranslate"><span class="pre">Non
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.line_">
-<span class="sig-name descname"><span class="pre">line_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.line_" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.line_">
+<span class="sig-name descname"><span class="pre">line_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.line_" title="Permalink to this definition">¶</a></dt>
 <dd><p>Draw a line chart</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -683,8 +683,8 @@ Null values are <code class="docutils literal notranslate"><span class="pre">Non
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.point_">
-<span class="sig-name descname"><span class="pre">point_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.point_" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.point_">
+<span class="sig-name descname"><span class="pre">point_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.point_" title="Permalink to this definition">¶</a></dt>
 <dd><p>Draw a point chart</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -697,8 +697,8 @@ Null values are <code class="docutils literal notranslate"><span class="pre">Non
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.rename">
-<span class="sig-name descname"><span class="pre">rename</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dest_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.rename" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.rename">
+<span class="sig-name descname"><span class="pre">rename</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dest_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.rename" title="Permalink to this definition">¶</a></dt>
 <dd><p>Renames a column in the main dataframe</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -714,8 +714,8 @@ Null values are <code class="docutils literal notranslate"><span class="pre">Non
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.replace">
-<span class="sig-name descname"><span class="pre">replace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">searchval</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replaceval</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.replace" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.replace">
+<span class="sig-name descname"><span class="pre">replace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">searchval</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replaceval</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.replace" title="Permalink to this definition">¶</a></dt>
 <dd><p>Replace a value in a column in the main dataframe</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -732,8 +732,8 @@ Null values are <code class="docutils literal notranslate"><span class="pre">Non
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.reverse">
-<span class="sig-name descname"><span class="pre">reverse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.reverse" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.reverse">
+<span class="sig-name descname"><span class="pre">reverse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.reverse" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reverses the main dataframe order</p>
 <dl class="field-list simple">
 <dt class="field-odd">Example</dt>
@@ -743,9 +743,9 @@ Null values are <code class="docutils literal notranslate"><span class="pre">Non
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.rmean">
-<span class="sig-name descname"><span class="pre">rmean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time_period</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'Number'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dateindex</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.rmean" title="Permalink to this definition">¶</a></dt>
-<dd><p>Resample and add a mean column the main dataframe to a time period</p>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.rmean">
+<span class="sig-name descname"><span class="pre">rmean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time_period</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'Number'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dateindex</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.rmean" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resample and add a sum column the main dataframe to a time period</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -763,8 +763,8 @@ Null values are <code class="docutils literal notranslate"><span class="pre">Non
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.roundvals">
-<span class="sig-name descname"><span class="pre">roundvals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.roundvals" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.roundvals">
+<span class="sig-name descname"><span class="pre">roundvals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.roundvals" title="Permalink to this definition">¶</a></dt>
 <dd><p>Round floats in a column. Numbers are going to be
 converted to floats if they are not already</p>
 <dl class="field-list simple">
@@ -782,8 +782,8 @@ converted to floats if they are not already</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.rsum">
-<span class="sig-name descname"><span class="pre">rsum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time_period</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'Number'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dateindex</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.rsum" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.rsum">
+<span class="sig-name descname"><span class="pre">rsum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time_period</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'Number'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dateindex</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.rsum" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resample and add a sum the main dataframe to a time period</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -803,8 +803,8 @@ converted to floats if they are not already</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.show">
-<span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#dataspace.core.space.DataSpace.show" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.show">
+<span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#dataspace.core.DataSpace.show" title="Permalink to this definition">¶</a></dt>
 <dd><p>Display info about the dataframe</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -826,8 +826,8 @@ converted to floats if they are not already</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.sort">
-<span class="sig-name descname"><span class="pre">sort</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.sort" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.sort">
+<span class="sig-name descname"><span class="pre">sort</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.sort" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sorts the main dataframe according to the given column</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -840,8 +840,8 @@ converted to floats if they are not already</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.split_">
-<span class="sig-name descname"><span class="pre">split_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><a class="reference internal" href="#dataspace.core.space.DataSpace" title="dataspace.core.space.DataSpace"><span class="pre">dataspace.core.space.DataSpace</span></a><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#dataspace.core.space.DataSpace.split_" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.split_">
+<span class="sig-name descname"><span class="pre">split_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><a class="reference internal" href="#dataspace.core.DataSpace" title="dataspace.core.DataSpace"><span class="pre">dataspace.core.DataSpace</span></a><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#dataspace.core.DataSpace.split_" title="Permalink to this definition">¶</a></dt>
 <dd><p>Split the main dataframe according to a column’s unique values and
 return a dict of DataSpace instances</p>
 <dl class="field-list simple">
@@ -858,8 +858,8 @@ return a dict of DataSpace instances</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.strip">
-<span class="sig-name descname"><span class="pre">strip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.strip" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.strip">
+<span class="sig-name descname"><span class="pre">strip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.strip" title="Permalink to this definition">¶</a></dt>
 <dd><p>Remove leading and trailing white spaces column’s values</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -872,8 +872,8 @@ return a dict of DataSpace instances</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.strip_cols">
-<span class="sig-name descname"><span class="pre">strip_cols</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.strip_cols" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.strip_cols">
+<span class="sig-name descname"><span class="pre">strip_cols</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.strip_cols" title="Permalink to this definition">¶</a></dt>
 <dd><p>Remove leading and trailing white spaces in columns names</p>
 <dl class="field-list simple">
 <dt class="field-odd">Example</dt>
@@ -883,8 +883,8 @@ return a dict of DataSpace instances</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.timestamps">
-<span class="sig-name descname"><span class="pre">timestamps</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.space.DataSpace.timestamps" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.timestamps">
+<span class="sig-name descname"><span class="pre">timestamps</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataspace.core.DataSpace.timestamps" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add a timestamps column from a date column</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -900,8 +900,8 @@ return a dict of DataSpace instances</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.to_date">
-<span class="sig-name descname"><span class="pre">to_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.to_date" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.to_date">
+<span class="sig-name descname"><span class="pre">to_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.to_date" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert some columns values to date type</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -917,8 +917,8 @@ return a dict of DataSpace instances</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.to_float">
-<span class="sig-name descname"><span class="pre">to_float</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.to_float" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.to_float">
+<span class="sig-name descname"><span class="pre">to_float</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.to_float" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert colums values to float</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -934,8 +934,8 @@ return a dict of DataSpace instances</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.to_int">
-<span class="sig-name descname"><span class="pre">to_int</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.to_int" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.to_int">
+<span class="sig-name descname"><span class="pre">to_int</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.to_int" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert some column values to integers</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -951,8 +951,8 @@ return a dict of DataSpace instances</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.to_type">
-<span class="sig-name descname"><span class="pre">to_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.space.DataSpace.to_type" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.to_type">
+<span class="sig-name descname"><span class="pre">to_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">cols</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.to_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert colums values to a given type in the
 main dataframe</p>
 <dl class="field-list simple">
@@ -970,8 +970,8 @@ main dataframe</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.unique_">
-<span class="sig-name descname"><span class="pre">unique_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#dataspace.core.space.DataSpace.unique_" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.unique_">
+<span class="sig-name descname"><span class="pre">unique_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#dataspace.core.DataSpace.unique_" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a list of unique values in a column</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -990,8 +990,8 @@ main dataframe</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="dataspace.core.space.DataSpace.wunique_">
-<span class="sig-name descname"><span class="pre">wunique_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colname</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'Number'</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#dataspace.core.space.DataSpace.wunique_" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.wunique_">
+<span class="sig-name descname"><span class="pre">wunique_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colname</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'Number'</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#dataspace.core.DataSpace.wunique_" title="Permalink to this definition">¶</a></dt>
 <dd><p>Weight unique values: returns a dataframe with a count
 of unique values for a column</p>
 <dl class="field-list simple">

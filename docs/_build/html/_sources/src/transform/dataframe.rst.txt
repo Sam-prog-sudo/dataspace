@@ -4,7 +4,7 @@ DataFrame
 Split
 -----
 
-.. automethod:: dataspace.core.space.DataSpace.split_
+.. automethod:: dataspace.core.DataSpace.split_
   :noindex:
 
   .. image:: /img/transform/split.png
@@ -12,7 +12,7 @@ Split
 Indexcol
 --------
 
-.. automethod:: dataspace.core.space.DataSpace.indexcol
+.. automethod:: dataspace.core.DataSpace.indexcol
   :noindex:
 
   .. image:: /img/transform/indexcol.png
@@ -20,7 +20,7 @@ Indexcol
 Drop
 ----
 
-.. automethod:: dataspace.core.space.DataSpace.drop
+.. automethod:: dataspace.core.DataSpace.drop
   :noindex:
 
   .. image:: /img/transform/drop.png
@@ -28,7 +28,7 @@ Drop
 Add
 ---
 
-.. automethod:: dataspace.core.space.DataSpace.add
+.. automethod:: dataspace.core.DataSpace.add
   :noindex:
 
   .. image:: /img/transform/add.png
@@ -36,7 +36,7 @@ Add
 Rename
 ------
 
-.. automethod:: dataspace.core.space.DataSpace.rename
+.. automethod:: dataspace.core.DataSpace.rename
   :noindex:
 
   .. image:: /img/transform/rename.png
@@ -44,7 +44,7 @@ Rename
 Keep
 ----
 
-.. automethod:: dataspace.core.space.DataSpace.keep
+.. automethod:: dataspace.core.DataSpace.keep
   :noindex:
 
   .. image:: /img/transform/keep.png
@@ -52,7 +52,7 @@ Keep
 Copycol
 -------
 
-.. automethod:: dataspace.core.space.DataSpace.copycol
+.. automethod:: dataspace.core.DataSpace.copycol
   :noindex:
 
   .. image:: /img/transform/copycol.png

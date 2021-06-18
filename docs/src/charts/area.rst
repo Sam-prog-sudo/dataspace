@@ -1,7 +1,7 @@
 Area
 ====
     
-.. automethod:: dataspace.core.space.DataSpace.area_
+.. automethod:: dataspace.core.DataSpace.area_
   :noindex:
 
   .. image:: /img/charts/bokeh_area.png

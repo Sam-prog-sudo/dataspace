@@ -4,7 +4,7 @@ Convert types
 To integer
 ----------
 
-.. automethod:: dataspace.core.space.DataSpace.to_int
+.. automethod:: dataspace.core.DataSpace.to_int
   :noindex:
 
   .. image:: /img/clean/to_int.png
@@ -12,7 +12,7 @@ To integer
 To float
 --------
 
-.. automethod:: dataspace.core.space.DataSpace.to_float
+.. automethod:: dataspace.core.DataSpace.to_float
   :noindex:
 
   .. image:: /img/clean/to_float.png
@@ -20,7 +20,7 @@ To float
 To type
 -------
 
-.. automethod:: dataspace.core.space.DataSpace.to_type
+.. automethod:: dataspace.core.DataSpace.to_type
   :noindex:
 
   .. image:: /img/clean/to_type.png

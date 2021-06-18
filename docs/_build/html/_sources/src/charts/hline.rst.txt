@@ -1,7 +1,7 @@
 HLine
 =====
     
-.. automethod:: dataspace.core.space.DataSpace.hline_
+.. automethod:: dataspace.core.DataSpace.hline_
   :noindex:
 
   .. image:: /img/charts/bokeh_hline.png

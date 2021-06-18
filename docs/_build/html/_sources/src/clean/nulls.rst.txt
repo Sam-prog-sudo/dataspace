@@ -4,7 +4,7 @@ Nulls
 Drop NaN
 --------
 
-.. automethod:: dataspace.core.space.DataSpace.drop_nan
+.. automethod:: dataspace.core.DataSpace.drop_nan
   :noindex:
 
   .. image:: /img/clean/drop_nan.png
@@ -12,7 +12,7 @@ Drop NaN
 Fill NaN
 --------
 
-.. automethod:: dataspace.core.space.DataSpace.fill_nan
+.. automethod:: dataspace.core.DataSpace.fill_nan
   :noindex:
 
   .. image:: /img/clean/fill_nan.png
@@ -20,7 +20,7 @@ Fill NaN
 Fill nulls
 ----------
 
-.. automethod:: dataspace.core.space.DataSpace.fill_nulls
+.. automethod:: dataspace.core.DataSpace.fill_nulls
   :noindex:
 
   .. image:: /img/clean/fill_nulls.png

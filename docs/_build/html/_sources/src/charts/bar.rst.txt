@@ -1,7 +1,7 @@
 Bar
 ===
   
-.. automethod:: dataspace.core.space.DataSpace.bar_
+.. automethod:: dataspace.core.DataSpace.bar_
   :noindex:
 
   .. image:: /img/charts/bokeh_bar.png

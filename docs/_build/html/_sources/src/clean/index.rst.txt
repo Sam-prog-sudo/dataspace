@@ -4,7 +4,7 @@ Index
 Add an index from a column
 --------------------------
 
-.. automethod:: dataspace.core.space.DataSpace.index
+.. automethod:: dataspace.core.DataSpace.index
   :noindex:
 
   .. image:: /img/clean/index.png
@@ -12,7 +12,7 @@ Add an index from a column
 Add a date index from a column
 ------------------------------
 
-.. automethod:: dataspace.core.space.DataSpace.dateindex
+.. automethod:: dataspace.core.DataSpace.dateindex
   :noindex:
 
   .. image:: /img/clean/dateindex.png

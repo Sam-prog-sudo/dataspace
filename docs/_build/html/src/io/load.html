@@ -169,6 +169,15 @@
 <li class="toctree-l1"><a class="reference internal" href="../transform/values.html">Values</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../transform/values.html#sort">Sort</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../transform/values.html#exclude">Exclude</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../transform/values.html#dropr">Dropr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../transform/values.html#append">Append</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../transform/values.html#reverse">Reverse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../transform/values.html#apply">Apply</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../transform/resample.html">Resample timeseries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../transform/resample.html#rsum">Rsum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../transform/resample.html#rmean">Rmean</a></li>
 </ul>
 </li>
 </ul>
@@ -264,8 +273,8 @@
 <div class="section" id="from-a-dataframe">
 <h2>From a dataframe<a class="headerlink" href="#from-a-dataframe" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt class="sig sig-object py" id="dataspace.core.from_df">
-<span class="sig-prename descclassname"><span class="pre">dataspace.core.</span></span><span class="sig-name descname"><span class="pre">from_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="../../class_auto.html#dataspace.core.space.DataSpace" title="dataspace.core.space.DataSpace"><span class="pre">dataspace.core.space.DataSpace</span></a><a class="headerlink" href="#dataspace.core.from_df" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.load.from_df">
+<span class="sig-prename descclassname"><span class="pre">dataspace.core.load.</span></span><span class="sig-name descname"><span class="pre">from_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="../../class_auto.html#dataspace.core.DataSpace" title="dataspace.core.DataSpace"><span class="pre">dataspace.core.DataSpace</span></a><a class="headerlink" href="#dataspace.core.load.from_df" title="Permalink to this definition">¶</a></dt>
 <dd><p>Intialize a DataSpace from a pandas DataFrame</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -288,8 +297,8 @@
 <div class="section" id="from-a-csv-file">
 <h2>From a csv file<a class="headerlink" href="#from-a-csv-file" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt class="sig sig-object py" id="dataspace.core.from_csv">
-<span class="sig-prename descclassname"><span class="pre">dataspace.core.</span></span><span class="sig-name descname"><span class="pre">from_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="../../class_auto.html#dataspace.core.space.DataSpace" title="dataspace.core.space.DataSpace"><span class="pre">dataspace.core.space.DataSpace</span></a><a class="headerlink" href="#dataspace.core.from_csv" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.load.from_csv">
+<span class="sig-prename descclassname"><span class="pre">dataspace.core.load.</span></span><span class="sig-name descname"><span class="pre">from_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="../../class_auto.html#dataspace.core.DataSpace" title="dataspace.core.DataSpace"><span class="pre">dataspace.core.DataSpace</span></a><a class="headerlink" href="#dataspace.core.load.from_csv" title="Permalink to this definition">¶</a></dt>
 <dd><p>Loads csv data in the main dataframe</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -318,8 +327,8 @@ or relative if it starts with <code class="docutils literal notranslate"><span c
 <div class="section" id="from-a-django-orm-query">
 <h2>From a Django orm query<a class="headerlink" href="#from-a-django-orm-query" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt class="sig sig-object py" id="dataspace.core.from_django">
-<span class="sig-prename descclassname"><span class="pre">dataspace.core.</span></span><span class="sig-name descname"><span class="pre">from_django</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="../../class_auto.html#dataspace.core.space.DataSpace" title="dataspace.core.space.DataSpace"><span class="pre">dataspace.core.space.DataSpace</span></a><a class="headerlink" href="#dataspace.core.from_django" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="dataspace.core.load.from_django">
+<span class="sig-prename descclassname"><span class="pre">dataspace.core.load.</span></span><span class="sig-name descname"><span class="pre">from_django</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="../../class_auto.html#dataspace.core.DataSpace" title="dataspace.core.DataSpace"><span class="pre">dataspace.core.DataSpace</span></a><a class="headerlink" href="#dataspace.core.load.from_django" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load the main dataframe from a django orm query</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

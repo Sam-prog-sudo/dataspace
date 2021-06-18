@@ -4,7 +4,7 @@ Clean values
 Strip
 -----
 
-.. automethod:: dataspace.core.space.DataSpace.strip
+.. automethod:: dataspace.core.DataSpace.strip
   :noindex: 
 
   .. image:: /img/clean/strip.png
@@ -12,7 +12,7 @@ Strip
 Strip columns names
 -------------------
 
-.. automethod:: dataspace.core.space.DataSpace.strip_cols
+.. automethod:: dataspace.core.DataSpace.strip_cols
   :noindex: 
 
   .. image:: /img/clean/strip_cols.png
@@ -20,7 +20,7 @@ Strip columns names
 Round floats
 ------------
 
-.. automethod:: dataspace.core.space.DataSpace.roundvals
+.. automethod:: dataspace.core.DataSpace.roundvals
   :noindex: 
 
   .. image:: /img/clean/roundvals.png
@@ -28,7 +28,7 @@ Round floats
 Replace values
 --------------
 
-.. automethod:: dataspace.core.space.DataSpace.replace
+.. automethod:: dataspace.core.DataSpace.replace
   :noindex: 
 
   .. image:: /img/clean/replace.png

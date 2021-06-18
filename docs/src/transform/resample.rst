@@ -4,7 +4,7 @@ Resample timeseries
 Rsum
 ----
 
-.. automethod:: dataspace.core.space.DataSpace.rsum
+.. automethod:: dataspace.core.DataSpace.rsum
   :noindex:
 
   .. image:: /img/transform/rsum.png
@@ -12,7 +12,7 @@ Rsum
 Rmean
 -----
 
-.. automethod:: dataspace.core.space.DataSpace.rmean
+.. automethod:: dataspace.core.DataSpace.rmean
   :noindex:
 
   .. image:: /img/transform/rmean.png

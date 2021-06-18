@@ -40,17 +40,6 @@ def _rsum(
 def _rmean(
     df: pd.DataFrame, time_period: str, num_col: str = "Number", dateindex: str = None
 ):
-    """
-    Resample and add a mean column the main dataframe to a time period
-
-    :param time_period: unit + period: periods are Y, M, D, H, Min, S
-    :param time_period: str
-    :param num_col: number of the new column, defaults to "Number"
-    :param num_col: str, optional
-    :param dateindex: column name to use as date index, defaults to None
-
-    :example: ``ds.rmean("1Min")``
-    """
     try:
         return _resample_(df, "mean", time_period, num_col, dateindex)
     except Exception as e:

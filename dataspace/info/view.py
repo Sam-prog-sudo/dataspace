@@ -1,6 +1,6 @@
 import pandas as pd
-from ...utils.messages import msg_info
-from ...utils.colors import colors
+from dataspace.utils.messages import msg_info
+from dataspace.utils.colors import colors
 
 
 def _show(rows: int, df: pd.DataFrame) -> pd.DataFrame:

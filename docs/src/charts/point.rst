@@ -1,7 +1,7 @@
 Point
 =====
     
-.. automethod:: dataspace.core.space.DataSpace.point_
+.. automethod:: dataspace.core.DataSpace.point_
   :noindex:
 
   .. image:: /img/charts/bokeh_point.png

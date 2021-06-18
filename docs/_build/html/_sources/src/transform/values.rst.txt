@@ -4,7 +4,7 @@ Values
 Sort
 ----
 
-.. automethod:: dataspace.core.space.DataSpace.sort
+.. automethod:: dataspace.core.DataSpace.sort
   :noindex:
 
   .. image:: /img/transform/sort.png
@@ -12,7 +12,7 @@ Sort
 Exclude
 -------
 
-.. automethod:: dataspace.core.space.DataSpace.exclude
+.. automethod:: dataspace.core.DataSpace.exclude
   :noindex:
 
   .. image:: /img/transform/exclude.png
@@ -20,7 +20,7 @@ Exclude
 Dropr
 -----
 
-.. automethod:: dataspace.core.space.DataSpace.dropr
+.. automethod:: dataspace.core.DataSpace.dropr
   :noindex:
 
   .. image:: /img/transform/dropr.png
@@ -28,7 +28,7 @@ Dropr
 Append
 ------
 
-.. automethod:: dataspace.core.space.DataSpace.append
+.. automethod:: dataspace.core.DataSpace.append
   :noindex:
 
   .. image:: /img/transform/append.png
@@ -36,7 +36,7 @@ Append
 Reverse
 -------
 
-.. automethod:: dataspace.core.space.DataSpace.reverse
+.. automethod:: dataspace.core.DataSpace.reverse
   :noindex:
 
   .. image:: /img/transform/reverse.png
@@ -44,7 +44,7 @@ Reverse
 Apply
 -----
 
-.. automethod:: dataspace.core.space.DataSpace.apply
+.. automethod:: dataspace.core.DataSpace.apply
   :noindex:
 
   .. image:: /img/transform/apply.png

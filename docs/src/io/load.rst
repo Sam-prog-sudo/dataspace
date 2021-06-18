@@ -4,18 +4,18 @@ Load
 From a dataframe
 ----------------
 
-.. autofunction:: dataspace.core.from_df
+.. autofunction:: dataspace.core.load.from_df
 
   .. image:: /img/io/load_df.png
 
 From a csv file
 ---------------
 
-.. autofunction:: dataspace.core.from_csv
+.. autofunction:: dataspace.core.load.from_csv
 
 .. image:: /img/info/show.png
 
 From a Django orm query
 -----------------------
 
-.. autofunction:: dataspace.core.from_django
+.. autofunction:: dataspace.core.load.from_django
