@@ -450,6 +450,86 @@
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.count_empty_">
+<span class="sig-name descname"><span class="pre">count_empty_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">int</span><a class="headerlink" href="#dataspace.core.DataSpace.count_empty_" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of empty row indices</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>col</strong> (<em>str</em>) – column to count from</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>number of values</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p><cite>ds.count_empty_(“col1”)</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.count_null_">
+<span class="sig-name descname"><span class="pre">count_null_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">int</span><a class="headerlink" href="#dataspace.core.DataSpace.count_null_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Count the number of null values in a column</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>col</strong> (<em>str</em>) – the column to count from</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>number of values</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p><cite>ds.count_nulls_(“col1”)</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.count_unique_">
+<span class="sig-name descname"><span class="pre">count_unique_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">int</span><a class="headerlink" href="#dataspace.core.DataSpace.count_unique_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of unique values in a column</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>col</strong> (<em>str</em>) – column to count from</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>number of unique values</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p><cite>ds.count_unique_(“col1”)</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.count_zero_">
+<span class="sig-name descname"><span class="pre">count_zero_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">int</span><a class="headerlink" href="#dataspace.core.DataSpace.count_zero_" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of row with 0 values</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>col</strong> (<em>str</em>) – column to count from</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>number of values</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p><cite>ds.count_zero_(“col1”)</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="dataspace.core.DataSpace.dateindex">
 <span class="sig-name descname"><span class="pre">dateindex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#dataspace.core.DataSpace.dateindex" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set a datetime index from a column</p>
@@ -467,6 +547,120 @@
 <dt class="sig sig-object py" id="dataspace.core.DataSpace.df">
 <span class="sig-name descname"><span class="pre">df</span></span><em class="property"><span class="pre">:</span> <span class="pre">pandas.core.frame.DataFrame</span></em><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#dataspace.core.DataSpace.df" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.diffm">
+<span class="sig-name descname"><span class="pre">diffm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">diffcol</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'Diff'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">nan</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doround</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.diffm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a diff column to the main dataframe: calculate the
+diff from the column mean</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>diffcol</strong> (<em>str</em>) – column to diff from</p></li>
+<li><p><strong>name</strong> – diff column name, defaults to “Diff”</p></li>
+<li><p><strong>name</strong> – str, optional</p></li>
+<li><p><strong>default</strong> – column default value, defaults to nan</p></li>
+<li><p><strong>default</strong> – optional</p></li>
+</ul>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">ds.diffm(&quot;Col</span> <span class="pre">1&quot;,</span> <span class="pre">&quot;New</span> <span class="pre">col&quot;)</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.diffmp">
+<span class="sig-name descname"><span class="pre">diffmp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">diffcol</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'Diff'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">nan</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doround</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.diffmp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a diff column to the main dataframe: calculate the
+diff in percentage from the column mean</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>diffcol</strong> (<em>str</em>) – column to diff from</p></li>
+<li><p><strong>name</strong> – diff column name, defaults to “Diff”</p></li>
+<li><p><strong>name</strong> – str, optional</p></li>
+<li><p><strong>default</strong> – column default value, defaults to nan</p></li>
+<li><p><strong>default</strong> – optional</p></li>
+</ul>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">ds.diffmp(&quot;Col</span> <span class="pre">1&quot;,</span> <span class="pre">&quot;New</span> <span class="pre">col&quot;)</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.diffn">
+<span class="sig-name descname"><span class="pre">diffn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">diffcol</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'Diff'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doround</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.diffn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a diff column to the main dataframe: calculate the diff
+from the next value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>diffcol</strong> (<em>str</em>) – column to diff from</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – diff column name, defaults to “Diff”</p></li>
+</ul>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">ds.diffn(&quot;Col</span> <span class="pre">1&quot;,</span> <span class="pre">&quot;New</span> <span class="pre">col&quot;)</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.diffnp">
+<span class="sig-name descname"><span class="pre">diffnp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">diffcol</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'Diff'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doround</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.diffnp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a diff column to the main dataframe: calculate the diff
+in percentage from the next value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>diffcol</strong> (<em>str</em>) – column to diff from</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – diff column name, defaults to “Diff”</p></li>
+</ul>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">ds.diffnp(&quot;Col</span> <span class="pre">1&quot;,</span> <span class="pre">&quot;New</span> <span class="pre">col&quot;)</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.diffp">
+<span class="sig-name descname"><span class="pre">diffp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">diffcol</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'Diff'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doround</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.diffp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a diff column to the main dataframe: calculate the diff
+from the previous value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>diffcol</strong> (<em>str</em>) – column to diff from</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – diff column name, defaults to “Diff”</p></li>
+</ul>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">ds.diffp(&quot;Col</span> <span class="pre">1&quot;,</span> <span class="pre">&quot;New</span> <span class="pre">col&quot;)</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataspace.core.DataSpace.diffpp">
+<span class="sig-name descname"><span class="pre">diffpp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">diffcol</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'Diff'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doround</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#dataspace.core.DataSpace.diffpp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a diff column to the main dataframe: calculate the diff
+in percentage from the previous value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>diffcol</strong> (<em>str</em>) – column to diff from</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – diff column name, defaults to “Diff”</p></li>
+</ul>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">ds.diffpp(&quot;Col</span> <span class="pre">1&quot;,</span> <span class="pre">&quot;New</span> <span class="pre">col&quot;)</span></code></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="dataspace.core.DataSpace.drop">

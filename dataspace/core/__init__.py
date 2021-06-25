@@ -22,6 +22,7 @@ from dataspace.clean import (
     _roundvals,
     _replace,
 )
+from dataspace.count import _count_empty_, _count_null_, _count_unique_, _count_zero_
 from dataspace.transform import _drop, _rename, _append, _apply, _rsum, _rmean
 from dataspace.utils.messages import msg_ok
 from dataspace.calculations import _diffn, _diffp, _diffm, _diffs, _diffsp
@@ -328,6 +329,58 @@ class DataSpace:
             return df
         except Exception as e:
             raise Exception("Can not weight unique data", e)
+
+    # **************************
+    #           count
+    # **************************
+
+    def count_null_(self, col: str) -> int:
+        """Count the number of null values in a column
+
+        :param col: the column to count from
+        :type col: str
+        :return: number of values
+        :rtype: int
+
+        :example: `ds.count_nulls_("col1")`
+        """
+        return _count_null_(self.df, col)
+
+    def count_empty_(self, col: str) -> int:
+        """List of empty row indices
+
+        :param col: column to count from
+        :type col: str
+        :return: number of values
+        :rtype: int
+
+        :example: `ds.count_empty_("col1")`
+        """
+        return _count_empty_(self.df, col)
+
+    def count_zero_(self, col: str) -> int:
+        """List of row with 0 values
+
+        :param col: column to count from
+        :type col: str
+        :return: number of values
+        :rtype: int
+
+        :example: `ds.count_zero_("col1")`
+        """
+        return _count_zero_(self.df, col)
+
+    def count_unique_(self, col: str) -> int:
+        """Return the number of unique values in a column
+
+        :param col: column to count from
+        :type col: str
+        :return: number of unique values
+        :rtype: int
+
+        :example: `ds.count_unique_("col1")`
+        """
+        return _count_unique_(self.df, col)
 
     # **************************
     #        transform

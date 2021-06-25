@@ -22,6 +22,12 @@ Dataspace
 
 .. toctree::
    :maxdepth: 3
+   :caption: Count
+
+   src/count/count
+
+.. toctree::
+   :maxdepth: 3
    :caption: Clean
 
    src/clean/nulls
